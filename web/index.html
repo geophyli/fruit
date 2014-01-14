@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+      <title>[ Fruits! ]</title>
+      <link rel='stylesheet' type='text/css' href='style.css'>
+   </head>
+   <body>
+      <script type='text/javascript' src='fruits.js'></script>
+      <div class='block'>
+         <div>
+            <canvas id='canvas' width='800' height='600'>Your lovely browser doesn't support canvas :cry:</canvas>
+            <div class='points' id='points'>0</div>
+            <div class='music'><a id="musicControl" href="javascript:musicControl('swap')">music on</a> # <a id="soundControl" href="javascript:soundControl()">sounds on</a></div>
+            <div class='leyend'>
+               <img src="sprites/2.png" alt="red apple"> <span style='color:#C12'>10</span>
+               <img src="sprites/3.png" alt="cherry">    <span style='color:#E44'>15</span>
+               <img src="sprites/8.png" alt="pear">      <span style='color:#FA5'>25</span>
+               <img src="sprites/7.png" alt="peach">     <span style='color:#FA7'>50</span>
+               <img src="sprites/5.png" alt="banana">    <span style='color:#CC5'>75</span>
+               <img src="sprites/6.png" alt="orange">    <span style='color:#FA2'>100</span>
+               <img src="sprites/4.png" alt="lemon">     <span style='color:#FC2'>150</span>
+               <img src="sprites/1.png" alt="green apple"> <span style='color:#1C2'>250</span>
+            </div>
+         </div>
+         <div class='controls'><a href='javascript:newGame()'>start</a></div>
+      </div>
+      <audio id="music" preload="auto" loop>
+         <source src="music.ogg" type="audio/ogg">
+         <source src="music.mp3" type="audio/ogg">
+      </audio>
+   </body>
+</html>
